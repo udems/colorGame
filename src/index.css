@@ -1,5 +1,6 @@
 /* Overall container styling */
 .game-container {
+  width: 90%;
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
@@ -112,10 +113,10 @@
   transform: scale(1.05);
 }
 
-/* Responsive adjustments */
+/* Media Query for screens smaller than 600px */
 @media (max-width: 600px) {
   .game-container {
-    margin: 20px;
+    margin: 20px auto;
     padding: 15px;
   }
   .color-box {
@@ -125,5 +126,40 @@
   .color-button {
     width: 50px;
     height: 50px;
+  }
+  .game-title {
+    font-size: 1.6em;
+  }
+  .game-subtitle, .instructions, .status, .score {
+    font-size: 1em;
+  }
+  .new-game {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+/* Additional Media Query for screens smaller than 400px */
+@media (max-width: 400px) {
+  .game-container {
+    padding: 10px;
+  }
+  .color-box {
+    width: 100px;
+    height: 100px;
+  }
+  .color-button {
+    width: 40px;
+    height: 40px;
+  }
+  .game-title {
+    font-size: 1.4em;
+  }
+  .game-subtitle, .instructions, .status, .score {
+    font-size: 0.9em;
+  }
+  .new-game {
+    padding: 6px 12px;
+    font-size: 0.8em;
   }
 }
